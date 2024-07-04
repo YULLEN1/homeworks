@@ -1,5 +1,5 @@
 ﻿function parseCount(n) {
-    let parseResult = Number.parseInt(n);
+    let parseResult = Number.parseFloat(n);
     if (Number.isNaN(parseResult)) throw new Error("Невалидной значение");
     return parseResult;
 }
@@ -18,7 +18,7 @@ class Triangle {
         this.b = b;
         this.c = c;
         if (a > b + c || b > a + c || c > a + b) {
-            throw new Error("Треугольник не существует")
+            throw new Error("Треугольник с такими сторонами не существует")
         }
 
     }
