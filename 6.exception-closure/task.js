@@ -37,16 +37,16 @@ class Triangle {
     }
 }
 
-function getTrangle(a, b, c) {
+function getTriangle(a, b, c) {
     try {
         return new Triangle(a, b, c);
     } catch (e) {
         return {
             get perimeter() {
-                return "Ошибка! Треугольник не существует"
+                return "Ошибка! Треугольник не существует";
             },
             get area() {
-                return "Ошибка! Треугольник не существует"
+                return "Ошибка! Треугольник не существует";
            }
         }
     }
