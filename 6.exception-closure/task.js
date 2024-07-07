@@ -1,4 +1,5 @@
-﻿function parseCount(value) {
+﻿// Задача 1
+function parseCount(value) {
     const parsedValue = Number.parseFloat(value);
     if (Number.isNaN(parsedValue)) {
         throw new Error('Невалидное значение');
@@ -15,6 +16,7 @@ function validateCount(value) {
     }
 }
 
+// Задача 2
 class Triangle {
     constructor(a, b, c) {
         this.a = a;
